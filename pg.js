@@ -6,6 +6,7 @@ const uppercase = document.getElementById("upper");
 const number = document.getElementById("number");
 const symbol= document.getElementById("symbols");
 const generate = document.querySelector(".generate button");
+const copy = document.getElementById("copy");
 
 len.innerText = passbox.value;
 passbox.addEventListener("input",() => {
@@ -15,6 +16,10 @@ passbox.addEventListener("input",() => {
 generate.addEventListener("click" , () => {
     input.value = generatepassward();
 });
+
+copy.addEventListener("click",() => {
+    navigator.clipboard.writeText(input.value)
+})
 
 let lowerchars = "abcdefghijklmnopqrstuvwxyz";
 let upperchars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

@@ -25,7 +25,7 @@ body {
 .input input {
     width: 280px;
     margin-top: 10px;
-    height: 17px;
+    height: 23px;
     outline: none;
     text-align: end;
 }
@@ -75,4 +75,9 @@ body {
 .generate button:hover {
     background-color: rgb(80, 2, 80);
     color: #fcf5c7a2;
+}
+
+.input i {
+    position: absolute;
+    margin-top: 12px;
 }
